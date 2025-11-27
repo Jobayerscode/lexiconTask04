@@ -14,7 +14,7 @@ Whenever you insert a new item or remove the top item, the heap automatically re
 In C#, value types store the actual data directly in the variable.
 Reference types, however, store a reference (an address) that points to the location in memory where the data is held.
 
-For example, an array variable does not contain the array itself — it contains a reference to the memory address where the array elements are stored.
+For example, an array variable does not contain the array itself, it contains a reference to the memory address where the array elements are stored.
 
 3. Why Do the Two Methods Return Different Results?
 
@@ -24,5 +24,5 @@ Changing y later does not affect x, so the method returns 3.
 
 The second method works with reference types (MyInt objects).
 When you write y = x, both variables now refer to the same object in memory.
-So when you change y.MyValue to 4, you are modifying the same object that x points to — meaning x.MyValue also becomes 4.
+So when you change y.MyValue to 4, you are modifying the same object that x points to, meaning x.MyValue also becomes 4.
 That is why the method returns 4.
